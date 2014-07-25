@@ -40,3 +40,8 @@ a:hover {
   visibility: visible;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
+
+a:hover {
+  border-bottom: 2px solid $link;
+  margin-bottom: 0;
+}
