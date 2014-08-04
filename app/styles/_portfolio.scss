@@ -49,25 +49,10 @@ img {
   padding-right: 1em;
 }
 
-.hero {
-  @extend .full-width;
-
-  background-color: $salmon;
-  white-space:nowrap;
-  color: #fff;
-
-  h1 {
-    font-weight: normal;
-    line-height: 1em;
-    margin: 0;
-  }
-}
-
 .examples {
   @extend .container;
 
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding: 2rem 0;
   background-color: $white;
 
   .example {

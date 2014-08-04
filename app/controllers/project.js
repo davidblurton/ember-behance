@@ -9,9 +9,7 @@ export default Ember.ObjectController.extend({
     adapter.findAll().then(function(items) {
       self.set('portfolio', items
         .rejectBy('id', self.get('id'))
-        .filter(function(item, index) {
-          return index < 4;
-        })
+        .slice(0, 3)
       );
     });
   }.observes('id'),
