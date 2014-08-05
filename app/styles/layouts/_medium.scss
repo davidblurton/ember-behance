@@ -3,17 +3,11 @@
     @include width(12);
   }
 
-  .examples {
-    .example:nth-of-type(2n) {
-      margin-right: $gutter;
-    }
-
-    .example:nth-of-type(3n) {
-      margin-right: 0;
-    }
-  }
-
   .testimonial {
     @include width(12);
+  }
+
+  .project-container {
+    @include width(8);
   }
 }

@@ -3,17 +3,10 @@
     @include width(8);
   }
 
-  .container:after {
-    content:'';
-    display:block;
-    clear: both;
-  }
-
   .examples {
     .example {
-      float: left;
       @include width(4);
-      margin-right: $gutter;
+      display: block;
       margin-bottom: $gutter;
 
       position:relative;
@@ -40,10 +33,30 @@
       background-color: rgba($green, 0.85);
       color: $white;
     }
+  }
 
-    .example:nth-of-type(2n) {
-      margin-right: 0;
-    }
+  .page-container {
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+
+  .portfolio-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+    @include width(4);
+    overflow-y: scroll;
+  }
+
+  .project-container {
+    @include width(4);
+
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .testimonial {
