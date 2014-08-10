@@ -66,13 +66,10 @@ img {
 }
 
 .testimonial {
-  @extend .full-width;
-
-  background-color: $green;
-  color: $white;
+  color: $green;
 
   blockquote {
-    border-left: 0.5em solid rgba($white, 0.8);
+    border-left: 0.5em solid rgba($green, 0.8);
     padding-left: 2em;
     margin: 0;
 
