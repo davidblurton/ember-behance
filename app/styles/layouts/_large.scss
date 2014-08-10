@@ -1,10 +1,6 @@
-@media screen and (min-width: 18 * $column-with-gutter) {
+@media screen and (min-width: 17 * $column-with-gutter) {
   .container {
     @include width(12);
-  }
-
-  .intro {
-    margin-left: $cols4 + 1em;
   }
 
   .examples {
