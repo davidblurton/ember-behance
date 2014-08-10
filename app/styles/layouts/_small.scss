@@ -2,8 +2,9 @@
   .container {
     @include width(4);
 
-    margin-left: $cols5;
+    margin-left: $cols4 + 1em;
     margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 
   .sidebar {
@@ -17,6 +18,14 @@
 
     .sidebar-info {
       display: block;
+      padding-left: 2rem;
+      position: absolute;
+      bottom: 10rem;
+    }
+
+    .static-pages {
+      position: absolute;
+      bottom: 0;
     }
 
     h1, h2 {
@@ -29,6 +38,8 @@
 
     h2 {
       opacity: 0.6;
+      font-weight: normal;
+      line-height: 1.2;
     }
   }
 
@@ -72,6 +83,6 @@
   }
 
   .testimonial {
-    @include width(8);
+    @include width(4);
   }
 }

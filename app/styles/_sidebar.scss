@@ -2,7 +2,7 @@ $logo-height: 70px;
 
 .sidebar {
   background-color: $salmon;
-  padding: 3rem 0 3rem 2rem;
+  padding: 3rem 0;
 
   .sidebar-info {
     display: none;
@@ -28,7 +28,7 @@ $logo-height: 70px;
 }
 
 .static-pages a:hover {
-  border-color: $green;
+  text-decoration: underline;
 }
 
 .static-pages a+a:before {

@@ -12,4 +12,8 @@
       margin-right: 0;
     }
   }
+
+  .testimonial {
+    @include width(12);
+  }
 }
