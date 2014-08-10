@@ -1,12 +1,18 @@
 @media screen and (min-width: 10 * $column-with-gutter) {
   .container {
-    @include width(8);
-  }
+    @include width(4);
 
-  .container:after {
-    content:'';
-    display:block;
-    clear: both;
+    margin-left: $cols5;
+  }
+  
+  .sidebar {
+    @include width(4);
+
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   .examples {
@@ -40,10 +46,12 @@
       background-color: rgba($green, 0.85);
       color: $white;
     }
+  }
 
-    .example:nth-of-type(2n) {
-      margin-right: 0;
-    }
+  .examples:after {
+    content:'';
+    display:block;
+    clear: both;
   }
 
   .testimonial {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/ember-behance-portfolio.css">
   </head>
   <body>
-    <div class="container">
+    <aside class="sidebar">
       <header>
         <a href="/" id="home" class="header-logo"></a>
       </header>
@@ -19,18 +19,15 @@
         <a href="/contact">About</a>
         <a href="/contact">Contact</a>
       </nav>
+    </aside>
 
-      <div id="app-container"></div>
+    <div id="app-container"></div>
 
-      <noscript>
-        <div class="color-section">
-          Sorry, my portfolio doesn't work without javascript. You can still <a href="mailto:rachel@salmondesign.co">send me an email</a>
-        </div>
-      </noscript>
-
-      <footer></footer>
-    </div>
-
+    <noscript>
+      <div class="color-section">
+        Sorry, my portfolio doesn't work without javascript. You can still <a href="mailto:rachel@salmondesign.co">send me an email</a>
+      </div>
+    </noscript>
     <script>
       window.EmberBehancePortfolioENV = {{ENV}};
       window.EmberENV = window.EmberBehancePortfolioENV.EmberENV;

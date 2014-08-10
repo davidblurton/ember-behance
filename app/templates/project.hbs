@@ -1,30 +1,32 @@
-<section class="project">
-  <h2>{{name}}</h2>
+<div class="container">
+  <section class="project">
+    <h2>{{name}}</h2>
 
-  <p class="fields">
-    {{#each field in fields}}
-      {{#link-to 'portfolio' (query-params field=field)}}
-        {{field}}
-      {{/link-to}}
+    <p class="fields">
+      {{#each field in fields}}
+        {{#link-to 'portfolio' (query-params field=field)}}
+          {{field}}
+        {{/link-to}}
+      {{/each}}
+    </p>
+
+    {{#each module in modules}}
+      {{#if module.text}}
+        <p>
+          {{{module.text}}}
+        </p>
+      {{/if}}
+
+      {{#if module.src}}
+        <p>
+          <img {{bind-attr src=module.sizes.max_1240}} />
+        </p>
+      {{/if}}
     {{/each}}
-  </p>
+  </section>
 
-  {{#each module in modules}}
-    {{#if module.text}}
-      <p>
-        {{{module.text}}}
-      </p>
-    {{/if}}
+  <h2 class="banner">See more</h2>
+  {{image-gallery items=portfolio}}
 
-    {{#if module.src}}
-      <p>
-        <img {{bind-attr src=module.sizes.max_1240}} />
-      </p>
-    {{/if}}
-  {{/each}}
-</section>
-
-<h2 class="banner">See more</h2>
-{{image-gallery items=portfolio}}
-
-{{get-in-touch}}
+  {{get-in-touch}}
+</div>
